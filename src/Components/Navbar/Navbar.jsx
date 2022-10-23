@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import style from "./Navbar.module.css";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { DownloadIcon, HamburgerIcon } from "@chakra-ui/icons";
 import Hamburger from "./Hamburger";
+import resume from "../imges/RajKumarMahto.pdf"
 import { Link } from "react-scroll";
 
 function Navbar() {
@@ -14,10 +15,10 @@ function Navbar() {
     <div className={style.navbar}>
       <div className={style.logo}>
         {/* <img src={logo} alt={logo} /> */}
-        <p style={{ fontSize: "40px" }}>
+        <p >
           {" "}
           <span
-            style={{ color: "#ffa31a", fontSize: "40px",  }}
+            style={{ color: "#ffa31a"}}
           >
             Raj
           </span>
@@ -56,6 +57,15 @@ function Navbar() {
             Contact me
           </Link>
         </li>
+        <li>
+        <a href={resume} download>
+          <button className={style.resumeButton}>
+            <DownloadIcon bg={"transparent"} />
+            Resume
+          </button>
+        </a>
+        </li>
+
       </div>
       <div>
         <div onClick={() => setIsOpen(true)}>

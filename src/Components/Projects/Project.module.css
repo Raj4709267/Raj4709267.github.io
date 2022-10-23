@@ -50,3 +50,13 @@
         padding: 30px 10px 30px 10px;
     }
 }
+.techStack{
+    display: flex;
+    gap:20px;
+    width: 100%;
+    padding: 20px;
+}
+.techStack img{
+    width: 40px;
+    height: 40px;
+}

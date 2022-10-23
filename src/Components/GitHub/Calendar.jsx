@@ -1,7 +1,6 @@
 import GitHubCalendar from "react-github-calendar";
-
+import style from "./Calendar.module.css";
 import React from "react";
-
 
 function Calendar() {
   return (
@@ -14,18 +13,19 @@ function Calendar() {
         justifyContent: "center",
         alignItems: "center",
       }}
+      className={style.gitCalender}
     >
       <p
         style={{
-          fontSize: "55px",
           margin: "30px 0 50px 0",
         }}
       >
         Git<span style={{ color: "#ffa31a" }}>Hub</span> Calendar
       </p>
-      <GitHubCalendar username="Raj4709267" />
+      <div>
+        <GitHubCalendar username="Raj4709267" />
+      </div>
     </div>
-    
   );
 }
 

@@ -15,6 +15,7 @@ import { FaGithub } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import style from "./Project.module.css";
+import chakra from "../imges/chakra.png";
 AOS.init();
 
 function ProjectPage() {
@@ -37,30 +38,34 @@ function ProjectPage() {
           <Box className="image-container1">
             <Img src={overstock1} alt="img" />
           </Box>
-
-          <Text align="left" textAlign={"center"}>
-            OVERSTOCK.COM HELP YOU DISCOVER DESIGNER BRANDS & HOME GOODS
+          
+          <Text textAlign={"center"} width="80%">
+            Overstock.com Inc. is an online retailer and technology company. The
+            Company is an e-commerce retailer offering customers a range of
+            brands for the home at low prices.
           </Text>
           <HStack>
-            <Text color="#ffa31a" fontWeight="bold">
-              Tech Stack:
-            </Text>
-            <Text>ReactJS</Text>
-            <Divider
-              orientation="vertical"
-              border="2px"
-              height="10px"
-              bgColor="skyblue"
-            />
-            <Text>Chakra-UI</Text>
-            <Divider
-              orientation="vertical"
-              bgColor="skyblue"
-              border="2px"
-              height="10px"
-            />
+            <div className={style.techStack}>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
+                alt="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
+              />
+              <img
+                src="https://portfolio-mrsagar105.vercel.app/images/csscolor.png"
+                alt="https://portfolio-mrsagar105.vercel.app/images/csscolor.png"
+              />
+              <img
+                src="https://usefulangle.com/img/thumb/javascript.png"
+                alt="https://usefulangle.com/img/thumb/javascript.png"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                alt="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+              />
+              <img src={chakra} alt={chakra} />
+            </div>
           </HStack>
-          <Text>A solo project built in 4 day</Text>
           <HStack>
             <a
               target={"_blank"}
@@ -102,32 +107,25 @@ function ProjectPage() {
           <Box className="image-container2">
             <Img src={tie1} alt="img" />
           </Box>
-          <Text textAlign={"center"}>
+          <Text textAlign={"center"} width="80%">
             THE INDIAN EXPRESS IS AN ENGLISH-LANGUAGE INDIAN DAILY NEWS WEBSITE
           </Text>
           <HStack>
-            <Text color="#ffa31a" fontWeight="bold">
-              Text Stack:
-            </Text>
-            <Text>HTML5</Text>
-            <Divider
-              orientation="vertical"
-              border="2px"
-              height="10px"
-              bgColor="skyblue"
-            />
-            <Text>CSS3</Text>
-            <Divider
-              orientation="vertical"
-              bgColor="skyblue"
-              border="2px"
-              height="10px"
-            />
-            <Text>JavaScript</Text>
+            <div className={style.techStack}>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
+                alt="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
+              />
+              <img
+                src="https://portfolio-mrsagar105.vercel.app/images/csscolor.png"
+                alt="https://portfolio-mrsagar105.vercel.app/images/csscolor.png"
+              />
+              <img
+                src="https://usefulangle.com/img/thumb/javascript.png"
+                alt="https://usefulangle.com/img/thumb/javascript.png"
+              />
+            </div>
           </HStack>
-          <Text textAlign={"center"}>
-            A collobarotive project built in 4 day team lead by me
-          </Text>
           <HStack>
             <a
               target={"_blank"}
@@ -152,7 +150,6 @@ function ProjectPage() {
             </a>
           </HStack>{" "}
         </VStack>
-
       </SimpleGrid>
     </Stack>
   );
