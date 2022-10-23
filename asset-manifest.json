@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.0dad2edc.css",
-    "main.js": "/static/js/main.cbe12b86.js",
+    "main.css": "/static/css/main.311820e1.css",
+    "main.js": "/static/js/main.9bbae653.js",
     "static/media/overstock1.png": "/static/media/overstock1.e60d078d7ff9f059e4eb.png",
     "static/media/overstock2.png": "/static/media/overstock2.8f9751f843d0912e597e.png",
     "static/media/tie1.png": "/static/media/tie1.2b96afac4c9160225185.png",
     "static/media/avatar.jpg": "/static/media/avatar.2c88c359544dfde28d6c.jpg",
     "static/media/tie2.png": "/static/media/tie2.a47a775a1a4035793385.png",
     "static/media/RajKumarMahto.pdf": "/static/media/RajKumarMahto.eb401a06b0759ae3c414.pdf",
+    "static/media/chakra.png": "/static/media/chakra.7faa7025d019f1ad3b2b.png",
     "index.html": "/index.html",
-    "main.0dad2edc.css.map": "/static/css/main.0dad2edc.css.map",
-    "main.cbe12b86.js.map": "/static/js/main.cbe12b86.js.map"
+    "main.311820e1.css.map": "/static/css/main.311820e1.css.map",
+    "main.9bbae653.js.map": "/static/js/main.9bbae653.js.map"
   },
   "entrypoints": [
-    "static/css/main.0dad2edc.css",
-    "static/js/main.cbe12b86.js"
+    "static/css/main.311820e1.css",
+    "static/js/main.9bbae653.js"
   ]
 }
