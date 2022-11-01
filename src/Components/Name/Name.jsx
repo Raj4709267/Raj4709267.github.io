@@ -3,7 +3,7 @@ import style from "./Name.module.css";
 import img from "../imges/avatar.jpg";
 import { DownloadIcon } from "@chakra-ui/icons";
 import Typewriter from "typewriter-effect";
-import resume from "../imges/RajKumarMahto.pdf";
+import resume from "../imges/RajKumar-Mahto-Resume.pdf";
 // import { Link } from "react-router-dom";
 
 function Name() {
