@@ -156,9 +156,9 @@
 
 }
 
-@media (min-width: 20px) and (max-width: 400px) {
+@media (min-width: 20px) and (max-width: 450px) {
     .aboutme>p:first-child {
-        width: 90%;
+        width: 100%;
         font-size: 25px;
         font-weight: bold;
         /* padding-top: 30px; */

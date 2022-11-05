@@ -9,6 +9,10 @@
     border: 8px solid #808080;
     /* background-color: #808080; */
     /* border-radius: 10px; */
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
 .project>div:last-child>div>div {
 
@@ -45,18 +49,48 @@
 
 }
 
+.techStack{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    flex-direction: row;
+    gap:20px;
+    height: 80px;
+    overflow: wrap;
+}
+.techStack img{
+    height: 90%;
+}
+
 @media (min-width: 20px) and (max-width: 800px) {
     .project>div:last-child>div>div {
         padding: 30px 10px 30px 10px;
     }
 }
-.techStack{
-    display: flex;
-    gap:20px;
-    width: 100%;
-    padding: 20px;
+@media (min-width: 20px) and (max-width: 500px) {
+    .discription{
+        font-size: 14px;
+    }
 }
-.techStack img{
-    width: 40px;
-    height: 40px;
+@media (min-width: 30px) and (max-width: 950px) {
+    .techStack{
+        height: 70px;
+    }
+}
+@media (min-width: 30px) and (max-width: 950px) {
+    .techStack{
+        height: 70px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+    .project>div:last-child>div>div {
+        border: 8px solid #808080;
+        /* background-color: #808080; */
+        /* border-radius: 10px; */
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
 }
