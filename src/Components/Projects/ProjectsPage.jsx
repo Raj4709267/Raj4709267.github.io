@@ -238,8 +238,7 @@ function ProjectPage() {
           <Text textAlign={"center"} width="80%" className={style.discription}>
             Indian Express Limited is an Indian news media publishing company.
             It publishes several widely circulated dailies, including The Indian
-            Express and The Financial Express in English, the Loksatta in
-            Marathi and the Jansatta in Hindi.
+            Express and The Financial Express in English.
           </Text>
           <HStack>
             <div className={style.techStack}>
