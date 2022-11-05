@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.64fc658e.css",
-    "main.js": "/static/js/main.c0c2c38b.js",
+    "main.css": "/static/css/main.018c9c49.css",
+    "main.js": "/static/js/main.d58baa20.js",
     "static/media/overstock1.png": "/static/media/overstock1.e60d078d7ff9f059e4eb.png",
     "static/media/overstock2.png": "/static/media/overstock2.8f9751f843d0912e597e.png",
     "static/media/monster1.png": "/static/media/monster1.c02741294da5b1b9f671.png",
@@ -14,11 +14,11 @@
     "static/media/RajKumar-Mahto-Resume.pdf": "/static/media/RajKumar-Mahto-Resume.540b6f8e7d3fec79ca55.pdf",
     "static/media/chakra.png": "/static/media/chakra.7faa7025d019f1ad3b2b.png",
     "index.html": "/index.html",
-    "main.64fc658e.css.map": "/static/css/main.64fc658e.css.map",
-    "main.c0c2c38b.js.map": "/static/js/main.c0c2c38b.js.map"
+    "main.018c9c49.css.map": "/static/css/main.018c9c49.css.map",
+    "main.d58baa20.js.map": "/static/js/main.d58baa20.js.map"
   },
   "entrypoints": [
-    "static/css/main.64fc658e.css",
-    "static/js/main.c0c2c38b.js"
+    "static/css/main.018c9c49.css",
+    "static/js/main.d58baa20.js"
   ]
 }
