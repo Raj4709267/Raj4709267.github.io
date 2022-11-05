@@ -33,24 +33,24 @@ function ContactMe() {
         </div>
         <div>
           <EmailIcon />
-          <span> rk2519962@gmail.com</span>
+          <span>rajkumarmahto6372@gmail.com</span>
         </div>
         <div>
           <PhoneIcon />
           <span>+91 6372185012</span>
         </div>
         <div className={style.social}>
-          <a target="_blank" href="https://github.com/Raj4709267">
+          <a target="_blank"  rel="noreferrer" href="https://github.com/Raj4709267">
             <i style={{ fontSize: "30px", color: "white" }}>
               <BsGithub />
             </i>
           </a>
-          <a target="_blank" href="https://www.linkedin.com/in/rajkumarmahto/">
+          <a target="_blank"  rel="noreferrer" href="https://www.linkedin.com/in/rajkumarmahto/">
             <i style={{ fontSize: "30px", color: "white" }}>
               <BsLinkedin />
             </i>
           </a>
-          <a target="_blank" href="https://www.instagram.com/__ra_aj__/">
+          <a target="_blank"  rel="noreferrer" href="https://www.instagram.com/__ra_aj__/">
             <i style={{ fontSize: "30px", color: "white" }}>
             <BsInstagram />
             </i>
