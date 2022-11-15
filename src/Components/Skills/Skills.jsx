@@ -97,7 +97,7 @@ function Skills() {
                       gap: "10px",
                     }}
                   >
-                    <img src={item.img} alt={item.img} width="20px" />
+                    <img src={item.img} alt={item.img} width="35px" />
                     <p>{item.name}</p>
                   </div>
                 </div>
@@ -135,7 +135,7 @@ function Skills() {
                       gap: "10px",
                     }}
                   >
-                    <img src={item.img} alt={item.img} width="20px" />
+                    <img src={item.img} alt={item.img} width="35px" />
                     <p>{item.name}</p>
                   </div>
                 </div>
