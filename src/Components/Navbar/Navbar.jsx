@@ -58,8 +58,8 @@ function Navbar() {
           </Link>
         </li>
         <li>
-        <a href={resume} download>
-          <button className={style.resumeButton}>
+        <a href={resume} download="RajKumar-Mahto-Resume" >
+          <button   className={style.resumeButton}>
             <DownloadIcon bg={"transparent"} />
             Resume
           </button>

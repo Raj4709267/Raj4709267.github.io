@@ -27,7 +27,7 @@ function Name() {
       </div>
       <div className={style.resume}>
         {/* <Link></Link> */}
-        <a href={resume} download>
+        <a href={resume} download="RajKumar-Mahto-Resume">
           <button className={style.resumeButton}>
             <DownloadIcon bg={"transparent"} />
             RESUME
