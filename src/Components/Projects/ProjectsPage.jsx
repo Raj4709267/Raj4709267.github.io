@@ -69,7 +69,7 @@ function ProjectPage() {
             <a
               target={"_blank"}
               rel="noreferrer"
-              href="https://github.com/MJaved9/human-bee-8845"
+              href="https://github.com/Raj4709267/human-bee-8845"
             >
               <button className={style.button}>
                 <FaGithub bg={"transparent"} />
@@ -79,7 +79,7 @@ function ProjectPage() {
             <a
               target={"_blank"}
               rel="noreferrer"
-              href="https://frontend-gilt-one.vercel.app/"
+              href="https://fashion-club-ms.netlify.app/"
             >
               {" "}
               <button className={style.button}>
@@ -148,7 +148,7 @@ function ProjectPage() {
             <a
               target={"_blank"}
               rel="noreferrer"
-              href="https://over-stock.vercel.app/"
+              href="https://over-stock-raj4709267.netlify.app/"
             >
               <button className={style.button}>
                 <LinkIcon bg={"transparent"} />
@@ -213,7 +213,7 @@ function ProjectPage() {
             <a
               target={"_blank"}
               rel="noreferrer"
-              href="https://monster-bay.vercel.app/"
+              href="https://monster-jobs.vercel.app/"
             >
               {" "}
               <button className={style.button}>

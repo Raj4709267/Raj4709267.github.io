@@ -110,5 +110,11 @@ textarea {
         width: 100%;
         padding-left: 10%;
     }
-
+    .contactMe textarea {
+        padding: 20px;
+        font-size: 18px;
+        height: 200px;
+        color: #ffa31a;
+    
+    }
 }

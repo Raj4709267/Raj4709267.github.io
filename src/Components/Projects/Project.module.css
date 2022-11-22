@@ -71,6 +71,7 @@
     .discription{
         font-size: 14px;
     }
+    
 }
 @media (min-width: 30px) and (max-width: 950px) {
     .techStack{
@@ -80,6 +81,9 @@
 @media (min-width: 30px) and (max-width: 950px) {
     .techStack{
         height: 70px;
+    }
+    .project>div:last-child>div>div {
+        border: 6px solid #808080;
     }
 }
 
@@ -93,4 +97,5 @@
         margin-right: auto;
         margin-bottom: 30px;
     }
+    
 }
