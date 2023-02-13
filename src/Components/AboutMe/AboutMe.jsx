@@ -10,13 +10,11 @@ function AboutMe() {
       <div className={style.aboutme}>
         <p>Hi, I’m Raj. Nice to meet you.</p>
         <p>
-          I am a Full Stack developer passionate about building digital products
-          that improve everyday experiences for people. I love working on
-          exciting projects that test what I've learned while being exposed to
-          the power and potential of the ever-evolving technologies around us. I
-          am always on the lookout for better, and more importantly, ethical and
-          accessible ways to solve the common problems that we face on a day to
-          day basis.
+          Passionate full-stack web developer with experience in building fully
+          functional & responsive web applications. Efficient in both front-end
+          skills and back-end skills. Proficient in data structures and
+          algorithms with problem solving skills. Looking to further enhance
+          skills as a future full-stack web developer.
         </p>
         <Coding />
       </div>

@@ -79,7 +79,7 @@ function ProjectPage() {
             <a
               target={"_blank"}
               rel="noreferrer"
-              href="https://fashion-club-ms.netlify.app/"
+              href="https://fashionclub-three.vercel.app/"
             >
               {" "}
               <button className={style.button}>
