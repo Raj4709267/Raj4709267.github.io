@@ -43,6 +43,11 @@ export default function Hamburger({ isOpen, setOpen }) {
                   <p> About</p>
                 </div>
               </a>
+              <a href="#experience">
+                <div onClick={() => onClose()}>
+                  <p>Experience</p>
+                </div>
+              </a>
               <a href="#skill">
                 <div onClick={() => onClose()}>
                   <p> Skills</p>

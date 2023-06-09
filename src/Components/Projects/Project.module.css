@@ -14,6 +14,7 @@
     margin-right: auto;
     margin-bottom: 30px;
 }
+
 .project>div:last-child>div>div {
 
     box-shadow: rgba(140, 139, 139, 0.3) 0px 19px 38px, rgba(90, 89, 89, 0.22) 0px 15px 12px;
@@ -21,7 +22,7 @@
 
 .project {
     padding-top: 100px;
-    margin-top: -100px;
+    margin-top: 10px;
     /* border: 1px solid red; */
 
 }
@@ -49,16 +50,17 @@
 
 }
 
-.techStack{
+.techStack {
     display: flex;
     width: 100%;
     padding: 20px;
     flex-direction: row;
-    gap:20px;
+    gap: 20px;
     height: 80px;
     overflow: wrap;
 }
-.techStack img{
+
+.techStack img {
     height: 90%;
 }
 
@@ -67,21 +69,25 @@
         padding: 30px 10px 30px 10px;
     }
 }
+
 @media (min-width: 20px) and (max-width: 500px) {
-    .discription{
+    .discription {
         font-size: 14px;
     }
-    
+
 }
+
 @media (min-width: 30px) and (max-width: 950px) {
-    .techStack{
+    .techStack {
         height: 70px;
     }
 }
+
 @media (min-width: 30px) and (max-width: 950px) {
-    .techStack{
+    .techStack {
         height: 70px;
     }
+
     .project>div:last-child>div>div {
         border: 6px solid #808080;
     }
@@ -97,5 +103,5 @@
         margin-right: auto;
         margin-bottom: 30px;
     }
-    
+
 }

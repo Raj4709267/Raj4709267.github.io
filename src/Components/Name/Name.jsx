@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./Name.module.css";
 import img from "../imges/avatar.jpg";
-import { DownloadIcon } from "@chakra-ui/icons";
+import { DownloadIcon, ViewIcon } from "@chakra-ui/icons";
 import Typewriter from "typewriter-effect";
-import resume from "../imges/RajKumar-Mahto-Resume.pdf";
+import resume from "../imges/Raj-Kumar-Mahto-Resume.pdf";
 // import { Link } from "react-router-dom";
 
 function Name() {
@@ -21,18 +21,41 @@ function Name() {
           }}
         />
       </p>
-
       <div className={style.avatar}>
         <img src={img} alt="avatar" />
       </div>
-      <div className={style.resume}>
-        {/* <Link></Link> */}
-        <a href={resume} download="RajKumar-Mahto-Resume">
-          <button className={style.resumeButton}>
-            <DownloadIcon bg={"transparent"} />
-            RESUME
-          </button>
-        </a>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "20px",
+        }}
+      >
+        <div className={style.resume}>
+          {/* <Link></Link> */}
+          <a href={resume} download="Raj-Kumar-Mahto-Resume">
+            <button className={style.resumeButton}>
+              <DownloadIcon bg={"transparent"} />
+              RESUME
+            </button>
+          </a>
+        </div>
+
+        <div className={style.resume}>
+          {/* <Link></Link> */}
+          <a
+            href={
+              "https://drive.google.com/file/d/1hXNAxtKmaOYt-Enr24TqusULdqKmVi0b/view"
+            }
+            target="_blank"
+          >
+            <button className={style.resumeButton}>
+              <ViewIcon bg={"transparent"} />
+              RESUME
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );
