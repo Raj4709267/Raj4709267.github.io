@@ -34,6 +34,81 @@ function ProjectPage() {
           boxShadow="rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"
         >
           <Text fontSize="2xl" fontWeight="semibold">
+            Town Talk Chat App
+          </Text>
+          <Box className="image-container5">
+            <Img src={"https://i.imgur.com/hRmDJxK.png"} alt="img" />
+          </Box>
+          <Text textAlign={"center"} width="80%" className={style.discription}>
+            A dynamic web application designed for connecting with friends and
+            sharing posts in real time. The app incorporates real-time
+            messaging, JWT-based authentication, customizable themes, and
+            responsive design.
+          </Text>
+          <HStack>
+            <div className={style.techStack}>
+              <img
+                src="https://spsanchore13.github.io/shantilal/static/media/mongodb.0781b723446e1f8a1734f7831a9c3313.svg"
+                alt="https://spsanchore13.github.io/shantilal/static/media/mongodb.0781b723446e1f8a1734f7831a9c3313.svg"
+              />
+              <img
+                src="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png"
+                alt="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                alt="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+              />
+              <img
+                src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png"
+                alt="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg"
+                alt="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg"
+              />
+              <img
+                src={"https://mui.com/static/logo.png"}
+                alt={"https://mui.com/static/logo.png"}
+              />
+            </div>
+          </HStack>
+          <HStack>
+            <a
+              target={"_blank"}
+              rel="noreferrer"
+              href="https://github.com/Raj4709267/social_media"
+            >
+              <button className={style.button}>
+                <FaGithub bg={"transparent"} />
+                Github
+              </button>
+            </a>
+            <a
+              target={"_blank"}
+              rel="noreferrer"
+              href="https://town-talk-connect.vercel.app/"
+            >
+              {" "}
+              <button className={style.button}>
+                <LinkIcon bg={"transparent"} />
+                Live
+              </button>
+            </a>
+          </HStack>{" "}
+        </VStack>
+
+        <VStack
+          claseeName="projectContainer"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="1000"
+          spacing={2}
+          p={[2, 5]}
+          borderRadius="25px"
+          boxShadow="rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"
+        >
+          <Text fontSize="2xl" fontWeight="semibold">
             Fashion Club
           </Text>
           <Box className="image-container4">
@@ -41,11 +116,10 @@ function ProjectPage() {
           </Box>
           <Text textAlign={"center"} width="80%" className={style.discription}>
             Fashion club is An Ecommerce website that deals in luxury fashion
-            accessories like Clothing, Shoes, Bags, Accessories, Jewelry etc. 
+            accessories like Clothing, Shoes, Bags, Accessories, Jewelry etc.
           </Text>
           <HStack>
             <div className={style.techStack}>
-              
               <img
                 src="https://spsanchore13.github.io/shantilal/static/media/mongodb.0781b723446e1f8a1734f7831a9c3313.svg"
                 alt="https://spsanchore13.github.io/shantilal/static/media/mongodb.0781b723446e1f8a1734f7831a9c3313.svg"

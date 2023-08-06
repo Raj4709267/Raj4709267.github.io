@@ -13,12 +13,6 @@ function Coding() {
       <h1>Statistics</h1>
       <div data-aos="zoom-out-left" data-aos-duration="1000">
         <div>
-          <div>
-            <img
-              src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-1.svg"
-              alt="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-1.svg"
-            />
-          </div>
           <div className={style.text}>
             <p>
               <span>1200+</span>
@@ -28,12 +22,6 @@ function Coding() {
           </div>
         </div>
         <div>
-          <div>
-            <img
-              src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-2.svg"
-              alt="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-2.svg"
-            />
-          </div>
           <div className={style.text}>
             <p>
               <span>300+ </span>
@@ -43,12 +31,6 @@ function Coding() {
           </div>
         </div>
         <div>
-          <div>
-            <img
-              src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-3.svg"
-              alt="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-3.svg"
-            />
-          </div>
           <div className={style.text}>
             <p>
               <span>100+ </span>
@@ -58,12 +40,6 @@ function Coding() {
           </div>
         </div>
         <div>
-          <div>
-            <img
-              src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-4.svg"
-              alt="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-4.svg"
-            />
-          </div>
           <div className={style.text}>
             <p>
               <span>100+ </span>
@@ -73,12 +49,6 @@ function Coding() {
           </div>
         </div>
         <div>
-          <div>
-            <img
-              src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-5.svg"
-              alt="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-5.svg"
-            />
-          </div>
           <div className={style.text}>
             <p>
               <span>50+ </span>
@@ -87,12 +57,6 @@ function Coding() {
           </div>
         </div>
         <div>
-          <div>
-            <img
-              src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-6.svg"
-              alt="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-6.svg"
-            />
-          </div>
           <div className={style.text}>
             <p>
               <span>5+</span>
