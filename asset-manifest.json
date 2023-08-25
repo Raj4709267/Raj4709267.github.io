@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dd84f838.css",
-    "main.js": "/static/js/main.aacb3650.js",
+    "main.js": "/static/js/main.775171eb.js",
     "static/media/overstock1.png": "/static/media/overstock1.e60d078d7ff9f059e4eb.png",
     "static/media/fc2.png": "/static/media/fc2.f51432476080232f1f06.png",
     "static/media/overstock2.png": "/static/media/overstock2.8f9751f843d0912e597e.png",
@@ -15,10 +15,10 @@
     "static/media/chakra.png": "/static/media/chakra.7faa7025d019f1ad3b2b.png",
     "index.html": "/index.html",
     "main.dd84f838.css.map": "/static/css/main.dd84f838.css.map",
-    "main.aacb3650.js.map": "/static/js/main.aacb3650.js.map"
+    "main.775171eb.js.map": "/static/js/main.775171eb.js.map"
   },
   "entrypoints": [
     "static/css/main.dd84f838.css",
-    "static/js/main.aacb3650.js"
+    "static/js/main.775171eb.js"
   ]
 }
