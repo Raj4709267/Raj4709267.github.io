@@ -1,6 +1,11 @@
 .skills {
-    padding-top: 90px;
+    padding-top: 100px;
     text-align: center;
+    background-color: #1a202c;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #1a202c;
+
 }
 
 .skills>p {
@@ -8,7 +13,7 @@
 }
 
 .skills span {
-    color: #ffa31a;
+    color: #dc143c;
     font-weight: bold;
 }
 

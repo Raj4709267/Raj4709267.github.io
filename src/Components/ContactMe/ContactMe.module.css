@@ -4,13 +4,14 @@
     justify-content: space-between;
     color: white;
     padding-top: 50px;
+    /* border: 1px solid; */
+    min-height: 100vh;
 }
 
 .contactMe>div {
     padding: 10%;
     padding-top: 8%;
     padding-bottom: 5%;
-
 }
 
 .contactMe>div:first-child {
@@ -30,7 +31,7 @@
 .contactMe>div:first-child h1 {
     font-size: 50px;
     font-weight: bold;
-    color: #ffa31a;
+    color: #dc143c;
 }
 
 .contactMe span {
@@ -60,19 +61,21 @@ textarea {
     /* background: #808080; */
 
 }
-.contactMe>div:last-child input{
+
+.contactMe>div:last-child input {
     height: 50px;
 }
+
 .contactMe textarea {
     padding: 20px;
     font-size: 18px;
     height: 300px;
-    color: #ffa31a;
+    color: #dc143c;
 
 }
 
 .contactMe button {
-    background: #ffa31a;
+    background: #dc143c;
     color: white;
     width: 100px;
     /* margin: auto; */
@@ -83,7 +86,7 @@ textarea {
 }
 
 .contactMe button:hover {
-    background: #ec9109;
+    background: #c92834;
 }
 
 .social>a:last-child {
@@ -110,11 +113,12 @@ textarea {
         width: 100%;
         padding-left: 10%;
     }
+
     .contactMe textarea {
         padding: 20px;
         font-size: 18px;
         height: 200px;
-        color: #ffa31a;
-    
+        color: #dc143c;
+
     }
 }

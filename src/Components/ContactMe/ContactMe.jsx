@@ -1,25 +1,60 @@
 import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
-import React from "react";
+import React, { useRef, useState } from "react";
 import style from "./ContactMe.module.css";
 import { Box, Input, Textarea, useToast } from "@chakra-ui/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
+import emailjs from "@emailjs/browser";
 
 AOS.init();
 
 function ContactMe() {
   const toast = useToast();
+  const form = useRef();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
-  function handelSubmit(e) {
+  const sendEmail = (e) => {
     e.preventDefault();
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbwTf2sOLyNIKVl23oMbWem3tuR9g-5koOCmExzEEdXIVRr2u2xmvQ-gaxMIqh9zkLay_Q/exec";
-    const form = document.forms["submit-to-google-sheet"];
-    return fetch(scriptURL, { method: "POST", body: new FormData(form) })
-      .then((response) => form.reset())
-      .catch((error) => console.error("Error!", error.message));
-  }
+    setIsLoading(true);
+    if (!name || !email || !message) {
+      setIsLoading(false);
+      return;
+    }
+    emailjs
+      .sendForm(
+        "service_lck8488",
+        "template_ylqy78g",
+        form.current,
+        "L4vF6HNVORBqBwT-6"
+      )
+      .then(
+        (result) => {
+          setIsLoading(false);
+          form.current = null;
+          toast({
+            position: "bottom-left",
+            render: () => (
+              <Box color="#dc143c" p={3} bg="white">
+                Message sent
+              </Box>
+            ),
+          });
+
+          // Clear the form data
+          setName("");
+          setEmail("");
+          setMessage("");
+        },
+        (error) => {
+          console.log(error.text);
+          setIsLoading(false);
+        }
+      );
+  };
 
   return (
     <div id="contactMe" className={style.contactMe}>
@@ -40,19 +75,31 @@ function ContactMe() {
           <span>+91 6372185012</span>
         </div>
         <div className={style.social}>
-          <a target="_blank"  rel="noreferrer" href="https://github.com/Raj4709267">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/Raj4709267"
+          >
             <i style={{ fontSize: "30px", color: "white" }}>
               <BsGithub />
             </i>
           </a>
-          <a target="_blank"  rel="noreferrer" href="https://www.linkedin.com/in/rajkumarmahto/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/rajkumarmahto/"
+          >
             <i style={{ fontSize: "30px", color: "white" }}>
               <BsLinkedin />
             </i>
           </a>
-          <a target="_blank"  rel="noreferrer" href="https://www.instagram.com/__ra_aj__/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.instagram.com/__ra_aj__/"
+          >
             <i style={{ fontSize: "30px", color: "white" }}>
-            <BsInstagram />
+              <BsInstagram />
             </i>
           </a>
         </div>
@@ -62,30 +109,36 @@ function ContactMe() {
         data-aos-anchor-placement="center-bottom"
         data-aos-duration="1000"
       >
-        <form name="submit-to-google-sheet" onSubmit={(e) => handelSubmit(e)}>
-          <Input type="text" placeholder="Enter Name" name="Name" />
-          <Input type="text" placeholder="Enter Email" name="Email" />
+        <form ref={form} onSubmit={sendEmail}>
+          <Input
+            type="text"
+            placeholder="Name"
+            name="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <Input
+            type="text"
+            placeholder="Email"
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
           <Textarea
-            Name="Message"
-            placeholder="Enter Message"
+            placeholder="Message"
+            Name="message"
             id=""
             cols="30"
             rows="10"
-          ></Textarea>
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
           <button
             type="submit"
-            onClick={() =>
-              toast({
-                position: "bottom-left",
-                render: () => (
-                  <Box color="#ffa31a" p={3} bg="white">
-                    Message sent
-                  </Box>
-                ),
-              })
-            }
+            disabled={!name || !email || !message}
+            onClick={(e) => sendEmail(e)}
           >
-            Submit
+            {isLoading ? "Sending..." : "Submit"}
           </button>
         </form>
       </div>

@@ -2,7 +2,22 @@ import React from "react";
 import style from "./AboutMe.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { BsCodeSlash, BsClipboardData } from "react-icons/bs";
+import { RiUserVoiceLine } from "react-icons/ri";
+import { PiMathOperationsLight } from "react-icons/pi";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { GoProject } from "react-icons/go";
+
 AOS.init();
+
+const data = [
+  { icon: <BsCodeSlash />, text: "1200+ Hours Practical Coding" },
+  { icon: <BsClipboardData />, text: "300+ Hours DSA" },
+  { icon: <RiUserVoiceLine />, text: "100+ Hours Soft Skill Development" },
+  { icon: <PiMathOperationsLight />, text: "100+ Hours Math & Logic" },
+  { icon: <AiOutlineFundProjectionScreen />, text: "5+  Projects" },
+  { icon: <GoProject />, text: "20+  Mini Projects" },
+];
 function Coding() {
   return (
     <div
@@ -11,58 +26,32 @@ function Coding() {
       className={style.learning}
     >
       <h1>Statistics</h1>
-      <div data-aos="zoom-out-left" data-aos-duration="1000">
+      <div
+        data-aos="zoom-out-left"
+        data-aos-duration="1000"
+        className={style.statistics}
+      >
         <div>
-          <div className={style.text}>
-            <p>
-              <span>1200+</span>
-              Hours
-            </p>
-            <p>Practical Coding</p>
-          </div>
+          {data.map((item, i) => {
+            if (i < 3)
+              return (
+                <div className={style.text} key={i}>
+                  {item.icon}
+                  <p>{item.text}</p>
+                </div>
+              );
+          })}
         </div>
         <div>
-          <div className={style.text}>
-            <p>
-              <span>300+ </span>
-              Hours
-            </p>
-            <p>DSA</p>
-          </div>
-        </div>
-        <div>
-          <div className={style.text}>
-            <p>
-              <span>100+ </span>
-              hours
-            </p>
-            <p>Soft Skill Development</p>
-          </div>
-        </div>
-        <div>
-          <div className={style.text}>
-            <p>
-              <span>100+ </span>
-              Hours
-            </p>
-            <p>Math & Logic</p>
-          </div>
-        </div>
-        <div>
-          <div className={style.text}>
-            <p>
-              <span>50+ </span>
-            </p>
-            <p>Mini Projects</p>
-          </div>
-        </div>
-        <div>
-          <div className={style.text}>
-            <p>
-              <span>5+</span>
-            </p>
-            <p>Projects </p>
-          </div>
+          {data.map((item, i) => {
+            if (i >= 3)
+              return (
+                <div className={style.text} key={i}>
+                  {item.icon}
+                  <p>{item.text}</p>
+                </div>
+              );
+          })}
         </div>
       </div>
     </div>

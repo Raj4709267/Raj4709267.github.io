@@ -12,6 +12,7 @@ function Calendar() {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        background: "#1a202c",
       }}
       className={style.gitCalender}
     >
@@ -20,7 +21,7 @@ function Calendar() {
           margin: "30px 0 50px 0",
         }}
       >
-        Git<span style={{ color: "#ffa31a" }}>Hub</span> Calendar
+        Git<span style={{ color: "#dc143c" }}>Hub</span> Calendar
       </p>
       <div className={style.calender}>
         <GitHubCalendar username="Raj4709267" />
@@ -40,10 +41,9 @@ function Calendar() {
             align="center"
             src="https://github-readme-stats.vercel.app/api?username=Raj4709267&theme=dark&count_private=true&show_icons=true
           "
-          alt="stats"
+            alt="stats"
           />
         </a>
-       
       </div>
     </div>
   );

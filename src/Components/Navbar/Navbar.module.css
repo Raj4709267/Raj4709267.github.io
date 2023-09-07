@@ -3,11 +3,12 @@
     display: flex;
     justify-content: space-between;
     padding: 0 5% 0 5%;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
     -webkit-backdrop-filter: blur(9px);
     backdrop-filter: blur(9px);
+    width: 100vw;
     /* box-shadow: rgba(100, 100, 111, 0.05) 0px 7px 29px 0px;
     box-shadow: rgba(50, 50, 50, 0.15) 0px 5px 15px; */
 
@@ -63,6 +64,7 @@
 
 }
 
+
 .logo {
     margin-left: 50px;
 }
@@ -80,12 +82,17 @@
 }
 
 .menus>li:hover {
-    color: #ffa31a;
+    color: #dc143c;
+    /* cursor: pointer; */
+
+}
+
+a {
     cursor: pointer;
 }
 
 .active {
-    color: #ffa31a;
+    color: #dc143c;
 }
 
 .hamburger div {

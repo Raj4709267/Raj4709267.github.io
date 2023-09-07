@@ -11,6 +11,11 @@ import Experience from "./Components/Experience/Experience";
 function App() {
   return (
     <div className="App">
+      {/* <div style={{ position: "fixed", top: "50%" }}>
+        <p>h</p>
+        <p>h</p>
+        <p>h</p>
+      </div> */}
       <Navbar />
       <Name />
       <AboutMe />

@@ -5,7 +5,9 @@ import ProjectPage from "./ProjectsPage";
 function Projects() {
   return (
     <div id="project" className={style.project}>
-      <div>Projects</div>
+      <div>
+        Pro<span style={{ color: "white" }}>jects</span>
+      </div>
       <ProjectPage />
     </div>
   );

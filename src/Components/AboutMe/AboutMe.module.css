@@ -1,21 +1,29 @@
+.main_container {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    /* border: 1px solid; */
+}
+
 .aboutme {
-    background: #292929;
+    background: #1a202c;
     text-align: center;
+    /* padding-bottom: px; */
     /* color:  white; */
     /* padding-top: 100px; */
 }
 
-.header{
-    background: #292929;
+.header {
+    background: #1a202c;
     padding-top: 100px;
     text-align: center;
     font-size: 55px;
 }
+
 .aboutme>p {
     width: 50%;
     margin: auto;
     color: white;
-    background: #292929;
+    background: #1a202c;
 
 
 }
@@ -34,7 +42,7 @@
 }
 
 .learning {
-    background: #ffa31a;
+    background: #dc143c;
     width: 60%;
     margin: auto;
     border: 1px solid rgb(21, 21, 21);
@@ -50,7 +58,7 @@
     /* font-weight: bold; */
     margin-top: 10px;
     background: transparent;
-    color: #292929;
+    color: #1a202c;
     font-weight: bold;
 }
 
@@ -90,13 +98,13 @@
 
 }
 
-.learning p:last-child {
+/* .learning p:last-child {
     font-size: 18px;
     font-weight: bold;
-}
+} */
 
 .learning span {
-    color: #292929;
+    color: #1a202c;
     font-size: 25px;
     font-weight: bold;
     margin-left: 10px;
@@ -106,8 +114,40 @@
 
 .text {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
+    gap: 8px;
+    font-size: 20px;
+}
+
+.text svg {
+    font-size: 1.5rem;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.statistics>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 20px) and (max-width: 1200px) {
+    .statistics {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .text {
+        font-size: 14px;
+        text-align: left;
+    }
 }
 
 @media (min-width: 20px) and (max-width: 800px) {
@@ -128,21 +168,6 @@
         width: 70%;
     }
 
-    .text {
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-        align-items: flex-start;
-    }
-
-    .text p {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .text span {
-        margin-left: 0px;
-    }
 
     .learning h1 {
         font-size: 40px;
@@ -150,7 +175,8 @@
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    .header{
+
+    .header {
         padding-top: 70px;
     }
 
@@ -179,16 +205,6 @@
         width: 80%;
     }
 
-    .text>p:first-child {
-        font-size: 16px;
-    }
 
-    .text span {
-        font-size: 20px;
-    }
-
-    .text>p:last-child {
-        font-size: 16px;
-    }
 
 }

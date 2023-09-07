@@ -5,8 +5,11 @@ import Header from "./Header";
 
 function AboutMe() {
   return (
-    <>
-      <Header />
+    <div id="about" className={style.main_container}>
+      {/* <Header /> */}
+      <div className={style.header}>
+        About <span style={{ color: "#dc143c" }}>me</span>
+      </div>
       <div className={style.aboutme}>
         <p>Hi, I’m Raj. Nice to meet you.</p>
         <p>
@@ -18,7 +21,7 @@ function AboutMe() {
         </p>
         <Coding />
       </div>
-    </>
+    </div>
   );
 }
 

@@ -185,7 +185,7 @@ function Skills() {
                   >
                     {/* <img src={item.img} alt={item.img} width="20px" /> */}
                     <p>
-                      <CheckCircleIcon marginRight={"10px"} color={"#ffa31a"} />
+                      <CheckCircleIcon marginRight={"10px"} color={"#dc143c"} />
                       {item.name}
                     </p>
                   </div>

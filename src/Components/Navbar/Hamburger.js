@@ -29,9 +29,9 @@ export default function Hamburger({ isOpen, setOpen }) {
       >
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerCloseButton color={"#ffa31a"} fontSize="20px" />
+          <DrawerCloseButton color={"#dc143c"} fontSize="20px" />
 
-          <DrawerBody padding="40px" bg={"#1B1B1B"} color="#ffa31a">
+          <DrawerBody padding="40px" bg={"#1a202c"} color="#dc143c">
             <div className={style.hamburger}>
               <a href="#name">
                 <div onClick={() => onClose()}>

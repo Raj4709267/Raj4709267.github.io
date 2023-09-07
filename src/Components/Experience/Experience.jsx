@@ -4,7 +4,9 @@ import style from "./Experience.module.css";
 const Experience = () => {
   return (
     <div id="experience" className={style.experience}>
-      <p>Experience</p>
+      <h1>
+        <span style={{ color: "white" }}>Professional</span> Experience
+      </h1>
       <div className={style.experience_list}>
         <h1>{"Full stack web developer (Intern) - Zimyo HR Software"}</h1>
         <p>6th March 2023 - 1st June 2023</p>

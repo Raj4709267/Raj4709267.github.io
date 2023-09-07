@@ -1,10 +1,16 @@
 .App {
-  background: #1B1B1B;
+  background: #0f1624;
   color: white;
+
 }
 
+
+
+
+
+
 :root {
-  --primary: #ffa31a;
+  --primary: #dc143c;
 }
 
 .image-container1 {

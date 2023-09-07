@@ -1,27 +1,30 @@
-.calender{
+.calender {
     margin: auto;
     border: 2px solid rgb(224, 222, 222);
-    padding:5px;
+    padding: 5px;
     border-radius: 3px;
     margin-bottom: 40px;
 }
-.gitCalender>p{
+
+.gitCalender>p {
     font-size: 55px;
 }
+
 @media (min-width: 20px) and (max-width: 800px) {
-    .gitCalender>p{
+    .gitCalender>p {
         font-size: 45px;
     }
-    .stats>a{
+
+    .stats>a {
         width: 80%;
         margin: auto;
         text-align: center;
     }
- }
- .stats{
+}
+
+.stats {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
- }
-
+}

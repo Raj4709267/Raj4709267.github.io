@@ -1,28 +1,50 @@
 .name {
     text-align: center;
-    border: 1px solid #1B1B1B;
-    /* border: 1px solid white; */
     padding-bottom: 90px;
+    padding-top: 90px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    /* border: 1px solid; */
     /* margin-top: 90px; */
     /* height: 100vmax; */
 }
 
-.name>p:first-child {
+.name>div {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    /* margin-top: 100px; */
+    text-align: left;
+    /* border: 1px solid; */
+}
+
+
+
+.name>div>div>p:nth-child(1) {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: europa, sans-serif;
+}
+
+.name>div>div>p:nth-child(2) {
     font-size: 55px;
     font-weight: bold;
     font-family: europa, sans-serif;
-    margin-top: 100px;
+
 }
 
-.name>p:first-child>span {
-    color: #ffa31a;
-}
 
-.name>p:nth-child(2) {
-    font-size: 25px;
+.name>div>div>p:nth-child(3) {
+    font-size: 28px;
     font-weight: bold;
     font-family: europa, sans-serif;
-    margin-top: 15px;
+    color: #dc143c;
+
     /* color: #ffe100; */
 }
 
@@ -33,8 +55,8 @@
 }
 
 .avatar {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     /* border: 3px solid #9045f3; */
     /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;   */
@@ -44,15 +66,24 @@
     margin-bottom: 30px;
 }
 
+.buttons {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    margin-top: 32px;
+
+}
 
 .resumeButton {
     background: #000;
-    background: #ffa31a;
+    background: #dc143c;
     color: white;
     border-radius: 10px;
-    padding: 5px 10px 5px 10px;
-    font-size: 20px;
-    font-weight: bold;
+    padding: 10px 15px 10px 15px;
+    font-size: 16px;
     font-family: europa, sans-serif;
     /* margin-top: 20px; */
     display: flex;
@@ -63,44 +94,70 @@
 
 .resumeButton:hover {
     /* background: var(--primary); */
-    background: #f39914;
+    background: #c92834;
 
 }
 
 .resume>i:hover {
-    color: #ffa31a;
+    color: #dc143c;
 }
 
 .resume {
     display: flex;
     gap: 10px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    /* border: 1px solid red; */
+}
+
+@media (min-width: 20px) and (max-width: 925px) {
+    .name>div {
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+
+    .avatar {
+        margin-top: 0;
+
+
+    }
+
+    .name>div>div {
+        text-align: center;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .name>div>div>p:nth-child(3) {
+        font-size: 20px;
+    }
+
 }
 
 @media (min-width: 20px) and (max-width: 800px) {
-    .name>p:first-child {
+    .name>div>div>p:first-child {
         display: flex;
         flex-direction: column;
     }
+
     .avatar {
         width: 250px;
         height: 250px;
-        
+
     }
-    
+
 }
 
 @media (min-width: 20px) and (max-width: 800px) {
-    .name>p:first-child {
+    .name>div>div>p:first-child {
         display: flex;
         flex-direction: column;
-        font-size: 40px;
+        font-size: 20px;
     }
 
-    .name>p:nth-child(2) {
-        font-size: 20px;
+    .name>div>div>p:nth-child(2) {
+        font-size: 40px;
         font-weight: bold;
         font-family: europa, sans-serif;
         margin-top: 5px;
