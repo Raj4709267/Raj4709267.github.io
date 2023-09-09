@@ -11,24 +11,16 @@ const Experience = () => {
         <h1>{"Full stack web developer (Intern) - Zimyo HR Software"}</h1>
         <p>6th March 2023 - 1st June 2023</p>
         <ul>
+          <li>Contributed to HRMS product and client management web app.</li>
+          <li>Enhanced existing features and developed new ones.</li>
           <li>
-            Contributed to the development of new features and the enhancement
-            of existing functionality on the HRMS product and a client managing
-            web application.
-          </li>
-
-          <li>
-            Worked on frontend functionalities for modules such as Leave Rules,
-            IMEI Restrictions, Holidays and Leave Version History.
+            Focused on frontend for Leave Rules, IMEI Restrictions, Holidays,
+            and Leave Version History.
           </li>
           <li>
-            Participated in code reviews, debugging, bug fixing and testing to
-            ensure high-quality deliverables.
+            Participated in code reviews, debugging, bug fixes, and testing.
           </li>
-          <li>
-            Quickly adapted to new technologies and frameworks to meet project
-            requirements.
-          </li>
+          <li>Adapted to new technologies and frameworks for project needs.</li>
         </ul>
 
         <h2>Technologies Used:</h2>
